@@ -11,7 +11,7 @@ export default function TerritoryDashboard() {
 
   useEffect(() => {
     api
-      .get('/api/analytics/territory')
+      .get('/api/analytics/territory.json')
       .then((response) => {
         if (response.data && response.data.status === 'success') {
           setGeoData(response.data.data)

@@ -11,7 +11,7 @@ export default function B2CDashboard() {
 
   useEffect(() => {
     api
-      .get('/api/analytics/b2c')
+      .get('/api/analytics/b2c.json')
       .then((response) => {
         if (response.data && response.data.status === 'success') {
           setB2cData(response.data.data)

@@ -11,7 +11,7 @@ export default function PromotionDashboard() {
 
   useEffect(() => {
     api
-      .get('/api/analytics/promotion')
+      .get('/api/analytics/promotion.json')
       .then((response) => {
         if (response.data && response.data.status === 'success') {
           setPromoData(response.data.data)

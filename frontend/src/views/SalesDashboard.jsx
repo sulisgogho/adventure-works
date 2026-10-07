@@ -11,7 +11,7 @@ export default function SalesDashboard() {
 
   useEffect(() => {
     api
-      .get('/api/sales')
+      .get('/api/sales.json')
       .then((response) => {
         if (response.data && response.data.kpi) {
           setData(response.data)

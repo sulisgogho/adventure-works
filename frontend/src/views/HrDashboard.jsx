@@ -11,7 +11,7 @@ export default function HrDashboard() {
 
   useEffect(() => {
     api
-      .get('/api/analytics/hr')
+      .get('/api/analytics/hr.json')
       .then((response) => {
         if (response.data && response.data.status === 'success') {
           setHrData(response.data.data)

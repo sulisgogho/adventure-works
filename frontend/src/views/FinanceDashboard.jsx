@@ -11,7 +11,7 @@ export default function FinanceDashboard() {
 
   useEffect(() => {
     api
-      .get('/api/analytics/finance')
+      .get('/api/analytics/finance.json')
       .then((response) => {
         if (response.data && response.data.status === 'success') {
           setFinData(response.data.data)

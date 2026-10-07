@@ -11,7 +11,7 @@ export default function LogisticsDashboard() {
 
   useEffect(() => {
     api
-      .get('/api/logistics')
+      .get('/api/logistics.json')
       .then((response) => {
         if (response.data && response.data.kpi) {
           setData(response.data)

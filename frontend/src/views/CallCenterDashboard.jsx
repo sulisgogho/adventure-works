@@ -11,7 +11,7 @@ export default function CallCenterDashboard() {
 
   useEffect(() => {
     api
-      .get('/api/analytics/callcenter')
+      .get('/api/analytics/callcenter.json')
       .then((response) => {
         if (response.data && response.data.status === 'success') {
           setCcData(response.data.data)

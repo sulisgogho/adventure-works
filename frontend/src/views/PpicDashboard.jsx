@@ -11,7 +11,7 @@ export default function PpicDashboard() {
 
   useEffect(() => {
     api
-      .get('/api/ppic')
+      .get('/api/ppic.json')
       .then((response) => {
         if (response.data && response.data.kpi) {
           setData(response.data)

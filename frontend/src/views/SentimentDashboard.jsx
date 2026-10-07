@@ -11,7 +11,7 @@ export default function SentimentDashboard() {
 
   useEffect(() => {
     api
-      .get('/api/analytics/sentiment')
+      .get('/api/analytics/sentiment.json')
       .then((response) => {
         if (response.data && response.data.status === 'success') {
           setSentimentData(response.data.data)
